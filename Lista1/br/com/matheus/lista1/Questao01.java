@@ -13,14 +13,12 @@ d = raiz quardada ((x2-x1)² + (y2-y1)²)
 public class Questao01 {
 	
 	
-	public float distanciaEntrePontos(float x1, float y1, float x2, float y2) {
-		float d = (float) Math.sqrt(Math.pow((x2-x1), 2)+Math.pow((y2-y1), 2));
-		return d;
+	public Double distanciaEntrePontos(Double x1, Double y1, Double x2, Double y2) {
+		return Math.sqrt(Math.pow((x2-x1), 2)+Math.pow((y2-y1), 2));
 	}
 	
 	public void testeMetodo() {
-		float distancia = distanciaEntrePontos(2,2,12,2);
-		System.out.println(distancia);
+		System.out.println(distanciaEntrePontos(2.0,2.0,12.0,2.0));
 	}
 
 }
